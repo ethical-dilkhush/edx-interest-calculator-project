@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Interest</title>
+  <title>Web App – Simple Interest Calculator</title>
   <link rel="stylesheet" href="style.css">
   <script src="javascript.js"></script>
 </head>
@@ -17,20 +17,38 @@
     <label>Enter Amount:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input id="amt" onkeypress="isInputNumber(event)" type="text" name="amount" required><br><br>
     <label>Enter Interset Rate:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="range" min="0" max="100" value="0">
-    <input id="rate"  onkeypress="isInputNumber(event)" type="text" name="interest" required><br><br>
+    <input type="range" min="1" max="20.0" step="0.1" value="0" oninput="showvalues(this.value)">
+    <span id="rate"></span><br><br>
     <label>Enter Number of year:</label>
-    <input id="year"  onkeypress="isInputNumber(event)" type="text" name="year" required><br><br>
+    <select id="year">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
     
-    <input class="button" type="button" onclick="cal();" value="Compute Interset"><br><br><br>
+    <center> <input class="button" type="button" onclick="cal();" value="Compute Interset"><br><br></center>
+   
+    <div id="errorpop" class="msg">
+      <b id="error">*Please enter positive numbers</b>
+    </div>
 <div id="output">
-    <label>Your Deposit Amount:<span id="d-amt"></span></label><br><br>
-    <label>Interest Rate:<span id="d-rate"></span></label><br><br>
-    <label>Time:<span id="d-time"></span></label><br><br>
-    <label>Received Amount:<span id="d-final"></span></label><br>
+  
+<p>If you deposit <span id="d-amt"></span>,<br>
+at an Interest rate of <span id="d-rate"></span>.<br>
+You will recieve an amount of <span id="d-final"></span>,<br>
+in the year <span id="d-time"></span>.
+</p>  
   </div>
   </form>
-
+<div id="cp">Ⓒ Everyone Can Get Rich</div>
 </div>
+
 </body>
 </html>
