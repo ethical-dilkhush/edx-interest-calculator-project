@@ -1,37 +1,18 @@
-# Edx Interest Calculator Project
+# Simple Interest Calculator
 
-> A careful, production-oriented implementation designed for real-world use, maintainability, and long-term evolution.
-
-## Overview
-
-Edx Interest Calculator Project is architected to solve a concrete problem with reliable, modular code. It keeps concerns cleanly separated so contributions, extensions, and maintenance remain feasible as the project grows.
-
-## Features
-
--well-organized modules with clear responsibilities
-- Robust error handling and configurable behavior
-- Developer onboarding guides and sensible defaults
-- Extensible design without coupling core flows to specific environments
-
-## Install
-
-```bash
-# Install dependencies and setup according to project docs
-```
+A lightweight browser-based calculator for computing simple interest. Enter a principal amount, an interest rate, and a time period, and the app returns the final amount directly in the page.
 
 ## Usage
 
-```bash
-# Follow README instructions documented in repo files
-```
+Open `index.html` in any modern web browser. Use the slider to set the interest rate, enter the amount and number of years, then click **Compute Interest** to see the result.
 
-## Tech Stack
+## Files
 
-Built with proven tooling and modern patterns appropriate for the project’s scope.
+- `index.html` — main calculator UI
+- `style.css` — page styling
+- `javascript.js` — interest calculation logic
+- `test.html` — quick manual smoke-test page
 
 ## License
 
-MIT License — open source, free for commercial use.
-
----
-Built and maintained by Dilkhush Kumar ([@ethical-dilkhush](https://github.com/ethical-dilkhush)).
+MIT
