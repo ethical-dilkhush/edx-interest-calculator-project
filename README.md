@@ -12,7 +12,10 @@ Open `index.html` in any modern web browser. Use the slider to set the interest 
 - `style.css` — page styling
 - `javascript.js` — interest calculation logic
 - `test.html` — quick manual smoke-test page
+- `.gitignore` — git ignore file
+- `LICENSE` — Apache License 2.0
+- `newGovindFile.html` — additional example page
 
 ## License
 
-MIT
+Apache License 2.0
